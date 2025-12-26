@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +12,41 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f8f9fe;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #6C63FF 0%, #5A52D5 100%);
             color: white;
             padding: 40px 20px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .header h1 {
             font-size: 32px;
             margin-bottom: 10px;
         }
-        
+
         .header p {
             opacity: 0.9;
             font-size: 14px;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 40px auto;
             background: white;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         h2 {
             color: #6C63FF;
             margin-top: 30px;
@@ -54,28 +55,21 @@
             border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
         }
-        
-        h3 {
-            color: #5A52D5;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-        
+
         p {
             margin-bottom: 15px;
             text-align: justify;
         }
-        
+
         ul {
             margin: 15px 0;
             padding-left: 30px;
         }
-        
+
         li {
             margin-bottom: 8px;
         }
-        
+
         .highlight {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -83,7 +77,7 @@
             margin: 20px 0;
             border-radius: 4px;
         }
-        
+
         .info-box {
             background: #e7f3ff;
             border-left: 4px solid #2196F3;
@@ -91,14 +85,14 @@
             margin: 20px 0;
             border-radius: 4px;
         }
-        
+
         .footer {
             text-align: center;
             padding: 30px 20px;
             color: #666;
             font-size: 14px;
         }
-        
+
         .back-btn {
             display: inline-block;
             margin: 20px 0;
@@ -109,135 +103,99 @@
             border-radius: 8px;
             transition: background 0.3s;
         }
-        
+
         .back-btn:hover {
             background: #5A52D5;
         }
-        
+
+        a {
+            color: #6C63FF;
+        }
+
         @media (max-width: 768px) {
             .container {
                 margin: 20px;
                 padding: 20px;
             }
-            
+
             .header h1 {
                 font-size: 24px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1>🏥 BMI Calculator</h1>
         <p>Privacy Policy</p>
-        <p>Last Updated: December 2, 2024</p>
+        <p>Last Updated: December 26, 2025</p>
     </div>
-    
+
     <div class="container">
         <a href="index.html" class="back-btn">← Back to Language Selection</a>
-        
+
         <h2>Introduction</h2>
-        <p>BMI Calculator ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our mobile application.</p>
-        
-        <h2>Information We Collect</h2>
-        
-        <h3>Information You Provide</h3>
+        <p>BMI Calculator is a simple application for calculating Body Mass Index. This Privacy Policy explains how we
+            handle information when you use our mobile application.</p>
+
+        <h2>Information We Store</h2>
+        <p>The app stores the following information <strong>locally on your device only</strong>:</p>
         <ul>
-            <li><strong>User-Entered Information:</strong> Age, height, weight, and gender that you enter, used only for BMI calculation</li>
-            <li><strong>Note:</strong> All this data is stored <strong>locally on your device only</strong> and is never transmitted to our servers</li>
+            <li>Age, height, weight, and gender you enter for BMI calculation</li>
+            <li>BMI calculation history (up to 50 entries)</li>
+            <li>App settings (language preference, theme mode)</li>
         </ul>
-        
-        <h3>Information Collected Automatically</h3>
-        <p>We use Google AdMob to display advertisements. AdMob may collect:</p>
+
+        <div class="info-box">
+            <p><strong>Important:</strong> All this data is stored locally on your device using SharedPreferences and is
+                <strong>never transmitted to any server</strong>.</p>
+        </div>
+
+        <h2>Third-Party Services</h2>
+        <p>We use <strong>Google AdMob</strong> to display advertisements. AdMob may collect:</p>
         <ul>
             <li>Device advertising ID</li>
             <li>IP address</li>
             <li>Device information (model, operating system version)</li>
             <li>App usage data</li>
-            <li>General location signals (such as country or region) may be inferred by Google AdMob for ad delivery</li>
         </ul>
-        
-        <h2>How We Use Information</h2>
-        
-        <h3>User-Entered Information</h3>
-        <ul>
-            <li>Stored locally on your device only</li>
-            <li>Used solely to calculate your BMI and display results</li>
-            <li>Never shared with third parties</li>
-            <li>Never transmitted to our servers</li>
-            <li>You can clear this data by uninstalling the app</li>
-        </ul>
-        
-        <h3>Advertising Data (Collected by AdMob)</h3>
-        <ul>
-            <li>To display personalized advertisements</li>
-            <li>To improve ad performance and relevance</li>
-            <li>To analyze app usage patterns</li>
-        </ul>
-        
-        <h2>Third-Party Services</h2>
-        
-        <h3>Google AdMob</h3>
-        <p>We use Google AdMob to display advertisements. AdMob is a third-party service that may collect information as described in their privacy policy:</p>
+        <p>For more information about how Google handles data, please visit:</p>
         <ul>
             <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob Privacy</a></li>
         </ul>
-        
-        <div class="info-box">
-            <h3>Opting Out of Personalized Ads</h3>
-            <p>You can opt out of personalized advertising by:</p>
-            <ul>
-                <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
-            </ul>
-        </div>
-        
-        <h2>Data Storage and Security</h2>
-        <ul>
-            <li><strong>Local Storage:</strong> Your BMI calculations are stored locally using SharedPreferences (Android)</li>
-            <li><strong>No Cloud Storage:</strong> We do not store any of your personal data on our servers</li>
-            <li><strong>Security:</strong> While we implement reasonable security measures, no method of electronic storage is 100% secure</li>
-        </ul>
-        
-        <h2>Children's Privacy</h2>
-        <p>Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
-        
+
         <h2>Your Rights</h2>
-        <p>You have the right to:</p>
         <ul>
-            <li><strong>Access:</strong> View the data stored locally on your device</li>
-            <li><strong>Delete:</strong> Clear all data by uninstalling the app</li>
-            <li><strong>Opt-Out:</strong> Disable personalized ads through your device settings</li>
+            <li><strong>Access:</strong> View your data within the app's history section</li>
+            <li><strong>Delete:</strong> Clear all data by uninstalling the app or clearing app data from device
+                settings</li>
         </ul>
-        
-        <h2>Data Retention</h2>
-        <ul>
-            <li><strong>Local Data:</strong> Retained until you uninstall the app or clear app data</li>
-            <li><strong>AdMob Data:</strong> Retained according to Google's data retention policies</li>
-        </ul>
-        
+
+        <h2>Children's Privacy</h2>
+        <p>This app is not intended for children under 13 years of age.</p>
+
         <div class="highlight">
-            <h3>⚕️ Disclaimer</h3>
-            <p><strong>Important:</strong> This app is for informational purposes only and does not replace professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for medical decisions.</p>
+            <h3>⚕️ Medical Disclaimer</h3>
+            <p><strong>Important:</strong> This app is for informational purposes only and does not replace professional
+                medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for
+                medical decisions.</p>
         </div>
-        
-        <h2>Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, please contact us:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:mohammedalsrkal@gmail.com">mohammedalsrkal@gmail.com</a></li>
-            <li><strong>Website:</strong> <a href="https://alsrkal.netlify.app" target="_blank">https://alsrkal.netlify.app</a></li>
-        </ul>
-        
+
+        <h2>Policy Updates</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an
+            updated date.</p>
+
         <h2>Consent</h2>
-        <p>By using our app, you consent to this Privacy Policy and agree to its terms.</p>
-        
+        <p>By using our app, you consent to this Privacy Policy.</p>
+
         <a href="index.html" class="back-btn">← Back to Language Selection</a>
     </div>
-    
+
     <div class="footer">
         <p><strong>BMI Calculator</strong></p>
-        <p>Version 1.0.0</p>
-        <p>© 2024 All Rights Reserved</p>
+        <p>© 2025 All Rights Reserved</p>
     </div>
 </body>
+
 </html>
