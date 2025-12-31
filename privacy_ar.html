@@ -113,6 +113,46 @@
             color: #6C63FF;
         }
 
+        .download-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #34a853 0%, #0f9d58 100%);
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .download-section h3 {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .play-store-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .play-store-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .play-store-btn img {
+            width: 30px;
+            height: 30px;
+            margin-left: 12px;
+        }
+
         @media (max-width: 768px) {
             .container {
                 margin: 20px;
@@ -189,6 +229,16 @@
         <p>باستخدام تطبيقنا، فإنك توافق على سياسة الخصوصية هذه.</p>
 
         <a href="index.html" class="back-btn">→ العودة لاختيار اللغة</a>
+
+        <div class="download-section">
+            <h3>📱 حمّل تطبيق حاسبة BMI</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.healthtracker.bmicalculator" target="_blank"
+                class="play-store-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Google_Play_2022_logo.svg"
+                    alt="Google Play">
+                احصل عليه من Google Play
+            </a>
+        </div>
     </div>
 
     <div class="footer">
